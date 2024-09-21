@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int s=1;
+    int e=10;
+    int sum=0;
+    for(int i=s ; i<=e; i++)
+    {
+        sum= sum + i;
+        
+    }
+    cout<<sum;
+}
