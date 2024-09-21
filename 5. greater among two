@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int first=58;
+    int second=90;
+    if(first>second)
+    cout<<"first is greater";
+    else
+    cout<<"second is greater";
+}
