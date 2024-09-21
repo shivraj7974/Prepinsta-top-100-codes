@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int first=58;
+    int second=90;
+    int third=79;
+    if(first>second && first>third)
+    cout<<"first is greater";
+    else if (second>first && second>third)
+    cout<<"second is greater";
+    else 
+    cout<<"third is greater";
+}
