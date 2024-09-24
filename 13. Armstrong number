@@ -1,0 +1,16 @@
+  #include<iostream>
+  using namespace std;
+  int main(){
+      int n,rem,digit=0,temp;
+      cin>>n;
+      temp=n;
+      while(n>0){
+          rem=n%10;
+          digit=digit+(rem*rem*rem);
+          n=n/10;
+      }
+      if(digit==temp)
+      cout<<"Yes , its armstrong number";
+      else
+      cout<<"NOt";
+  }
