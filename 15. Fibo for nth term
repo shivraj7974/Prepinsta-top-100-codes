@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int F(int N)
+{
+    if(N<=1)
+    {
+        return N;
+    }
+    return F(N-1)+F(N-2);
+}
+int  main(){
+    int N = 7;
+    cout << F(N);
+    return 0;
+
+}
