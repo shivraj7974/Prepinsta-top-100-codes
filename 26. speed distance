@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int speed; 
+    cin>>speed;
+    int total_dis=800;
+    double speed_ms=speed*5/18;
+    int time = total_dis/speed_ms;
+    cout<<time<<endl;
+    return 0;
+}
