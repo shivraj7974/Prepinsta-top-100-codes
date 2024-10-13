@@ -1,0 +1,10 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+ int main() {
+       string a = "Hello world";
+       int b = a.length();
+       cout << b;
+       return 0;
+}
