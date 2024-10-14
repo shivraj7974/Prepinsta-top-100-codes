@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int finddiff(int n,int m){
+    int sum1,sum2,diff;
+    for(int i=1;i<=m;i++){
+        if(i%n==0){
+            sum1+=i;
+        }
+        else{
+            sum2+=i;
+        }
+    }
+    diff = sum2-sum1;
+    return diff;
+}
+
+
+int main(){
+    int n,m;
+    cin>>n>>m;
+    cout<<finddiff(n,m);
+}
