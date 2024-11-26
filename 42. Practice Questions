@@ -1,0 +1,142 @@
+// some of number......................................................................................
+#include<iostream>
+using namespace std;
+
+int SumNum(int n, int sum)
+{
+    if(n==0)
+    return sum;
+    sum+=n%10;
+    return SumNum(n/10,sum);
+}
+
+
+int main(){
+    int n,sum=0;
+    cin>>n;
+    cout<<SumNum(n,sum);
+    return 0;
+}
+
+// reverse of number.......................................................................................
+
+#include<iostream>
+using namespace std;
+
+
+int RevNum(int n, int rev)
+{
+    if(n==0)
+    return rev;
+    int rem=n%10;
+    rev=rev*10+rem;
+    return RevNum(n/10, rev);
+}
+
+int main(){
+    int n,rev=0 ;
+    cin>>n;
+    cout<<RevNum(n,rev);
+    return 0;
+    
+}
+
+// palindrome number/...................................................................
+
+#include<iostream>
+using namespace std;
+
+
+int RevNum(int n, int rev)
+{
+    if(n==0)
+    return rev;
+    int rem=n%10;
+    rev=rev*10+rem;
+    return RevNum(n/10, rev);
+}
+
+int main(){
+    int n,rev=0 ;
+    cin>>n;
+    if(RevNum(n,rev)==n)
+    cout<<"yes palindrome";
+    else
+    cout<<"no palindrome";
+    return 0;
+    
+}
+
+// armstrong number---------------------------------------------------------------------------
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate the sum of the powers of the digits
+int armnum(int n, int digits) {
+    if (n == 0) 
+        return 0;
+    int r = n % 10;
+    return pow(r, digits) + armnum(n / 10, digits);
+}
+
+// Function to count the number of digits in the number
+int countDigits(int n) {
+    if (n == 0) 
+        return 0;
+    return 1 + countDigits(n / 10);
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    int digits = countDigits(n); // Count the number of digits in the number
+    if (armnum(n, digits) == n) 
+        cout << "Yes, Armstrong number" << endl;
+    else 
+        cout << "Not an Armstrong number" << endl;
+
+    return 0;
+}
+
+
+// fibonacci //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n1=0,n2=1,n3;
+    cout<<n1<<endl<<n2<<endl;
+    for(int i=2; i<=10; i++)
+    {
+    n3=n1+n2;
+    cout<<n3<<endl;
+    n1=n2;
+    n2=n3;
+    }
+    return 0;
+    
+}
+
+// factorial number ................................................................................................
+
+#include<iostream>
+using namespace std;
+
+int fact(int n)
+{
+    if(n==0)
+    return 1;
+    return n*fact(n-1);
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<fact(n);
+    return 0;
+}
